@@ -1,0 +1,9 @@
+save reqs:
+conda env export > environment.yml
+    conda create --name <env_name> --file requirements.txt
+pip freeze > requirements.txt
+    pip install -r requirements.txt
+
+Starting new django project:
+"django-admin startproject <name> ."
+python manage.py runserver
